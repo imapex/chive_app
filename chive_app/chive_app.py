@@ -1,14 +1,10 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, request
 from flask_restful import Resource, Api
-# import mysql.connector
 
 app = Flask(__name__)
 api = Api(app)
 
-# for now,
-# we will keep a local object that tracks all of the devices,
-# this will be replaced with backend stroage(mongo)
 
 DEVICES = {}
 
