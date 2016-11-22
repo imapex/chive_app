@@ -6,7 +6,7 @@ build:
 
 publish:
     docker:
-        repo: $$DOCKER_USERNAME/chive_db
+        repo: $$DOCKER_USERNAME/chive_app
         tag: latest
         username: $$DOCKER_USERNAME
         password: $$DOCKER_PASSWORD
@@ -21,4 +21,4 @@ deploy:
             username: $$MANTL_USERNAME
             password: $$MANTL_PASSWORD
         urls:
-            - https://$$MANTL_CONTROL/marathon/v2/apps/imapex/chive/restart?force=true
+            - https://$$MANTL_CONTROL/marathon/v2/apps/chive/$$DOCKER_USERNAME/data/restart?force=true
