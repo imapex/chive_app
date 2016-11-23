@@ -2,13 +2,9 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
 
-
 app = Flask(__name__)
 api = Api(app)
 
-# for now,
-# we will keep a local object that tracks all of the devices,
-# this will be replaced with backend stroage(mongo)
 
 DEVICES = {}
 
@@ -36,4 +32,4 @@ class getInventory(Resource):
 api.add_resource(getInventory, '/device')
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=False, host='0.0.0.0', port=5000)
