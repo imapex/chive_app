@@ -1,8 +1,15 @@
-# CHIVE Application
+# C H I V E   Application Service
+Cisco Heat Indication Visualization Explorer Application Service
 
-# CHIVE (Cisco Heat Indication Visualization Explorer) Application Service
+This is the Application microservice service for the CHIVE application
 
-This is the Application service for the CHIVE microservice application
+# Application Details
+This application will was developed based on microservice architecture and is wrapped in a Docker container. This application is a REST API that leverages Flask-RESTful API 
+
+# Diagram
+
+REST API Flow: 
+![chive_agent REST]( https://github.com/imapex/chive_agent/blob/master/diagrams/CHIVE_flow.gif "CHIVE_flow")
 
 
 # Installation
